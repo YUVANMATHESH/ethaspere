@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ETHASPHERE — Securing The Digital Future Through Innovation</title>
+<meta name="description" content="ETHASPHERE is a cybersecurity innovation team focused on threat detection, ethical hacking research, and advanced security solutions." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== CYBER GRID CANVAS BACKGROUND ===== -->
+<canvas id="grid-canvas"></canvas>
+
+<!-- ===== NAVIGATION ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-bracket">[</span>ETHASPHERE<span class="nav__logo-bracket">]</span>
+    </a>
+
+    <nav class="nav__links" id="nav-links">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#domains" class="nav__link">Domains</a>
+      <a href="#operations" class="nav__link">Operations</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#team" class="nav__link">Team</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== 1. HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero__glow hero__glow--blue"></div>
+    <div class="hero__glow hero__glow--red"></div>
+
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>SYSTEM STATUS: OPERATIONAL</p>
+        <h1 class="hero__title">
+          ETH<span class="text-red">A</span>SPHERE
+        </h1>
+        <p class="hero__tagline">Securing The Digital Future Through Innovation</p>
+        <p class="hero__desc">
+          A cybersecurity innovation team focused on threat detection, ethical hacking
+          research, and advanced security solutions.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Explore Projects</a>
+          <a href="#team" class="btn btn--ghost">Meet Our Team</a>
+        </div>
+      </div>
+
+      <div class="hero__terminal-wrap">
+        <div class="shield" aria-hidden="true">
+          <svg viewBox="0 0 200 220" class="shield__svg">
+            <path class="shield__path" d="M100 10 L180 45 V110 C180 160 145 195 100 212 C55 195 20 160 20 110 V45 Z"/>
+            <path class="shield__check" d="M65 108 L90 135 L140 80" />
+          </svg>
+        </div>
+
+        <div class="terminal" id="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--r"></span>
+            <span class="terminal__dot terminal__dot--y"></span>
+            <span class="terminal__dot terminal__dot--g"></span>
+            <span class="terminal__title">ethasphere@core:~</span>
+          </div>
+          <div class="terminal__body" id="terminal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scanline" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===== 2. ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">01 / ABOUT</p>
+      <h2 class="section__title">Who We Are</h2>
+      <p class="about__lead">
+        ETHASPHERE is a cybersecurity-focused innovation team dedicated to researching
+        emerging threats, developing security solutions, and strengthening digital
+        protection through technology and ethical security practices.
+      </p>
+
+      <div class="about__grid">
+        <div class="glass-card about__card">
+          <div class="about__icon about__icon--blue">◈</div>
+          <h3>Vision</h3>
+          <p>To build a safer digital world by creating innovative cybersecurity solutions.</p>
+        </div>
+        <div class="glass-card about__card">
+          <div class="about__icon about__icon--red">◈</div>
+          <h3>Mission</h3>
+          <p>To identify cyber risks, develop advanced security technologies, and empower organizations with better protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. CYBERSECURITY DOMAINS ===== -->
+  <section class="domains" id="domains">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">02 / DOMAINS</p>
+      <h2 class="section__title">Cybersecurity Domains</h2>
+      <p class="section__sub">Where our research and engineering effort is focused.</p>
+
+      <div class="domains__grid" id="reveal-domains">
+        <article class="glass-card domain-card">
+          <span class="domain-card__tag">NET</span>
+          <h3>Network Security</h3>
+          <p>Protecting digital networks from unauthorized access, cyber attacks, and data breaches through advanced monitoring and defense techniques.</p>
+        </article>
+        <article class="glass-card domain-card">
+          <span class="domain-card__tag">CLD</span>
+          <h3>Cloud Security</h3>
+          <p>Securing cloud infrastructure, applications, and sensitive data against vulnerabilities and unauthorized access.</p>
+        </article>
+        <article class="glass-card domain-card">
+          <span class="domain-card__tag">AI</span>
+          <h3>AI Security</h3>
+          <p>Using artificial intelligence to detect, analyze, and respond to modern cyber threats with intelligent security solutions.</p>
+        </article>
+        <article class="glass-card domain-card">
+          <span class="domain-card__tag">DFR</span>
+          <h3>Digital Forensics</h3>
+          <p>Investigating cyber incidents by collecting and analyzing digital evidence to understand attacks.</p>
+        </article>
+        <article class="glass-card domain-card">
+          <span class="domain-card__tag">THD</span>
+          <h3>Threat Detection</h3>
+          <p>Identifying suspicious activities and cyber threats through continuous monitoring and advanced analysis.</p>
+        </article>
+        <article class="glass-card domain-card">
+          <span class="domain-card__tag">ETH</span>
+          <h3>Ethical Hacking Research</h3>
+          <p>Discovering vulnerabilities through ethical security testing and helping systems become more secure.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. RED TEAM / BLUE TEAM ===== -->
+  <section class="ops" id="operations">
+    <p class="eyebrow eyebrow--center">03 / OPERATIONS</p>
+    <h2 class="section__title section__title--center">Red Team &amp; Blue Team</h2>
+    <p class="section__sub section__sub--center">Drag the divider — offense meets defense.</p>
+
+    <div class="ops__split" id="ops-split">
+      <div class="ops__side ops__side--red">
+        <div class="ops__content">
+          <span class="ops__label">RED TEAM</span>
+          <p class="ops__desc">Simulating real-world cyber attacks to identify vulnerabilities, test defenses, and improve security posture.</p>
+          <ul class="ops__list">
+            <li>Penetration Testing</li>
+            <li>Vulnerability Assessment</li>
+            <li>Security Testing</li>
+            <li>Attack Simulation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ops__side ops__side--blue">
+        <div class="ops__content">
+          <span class="ops__label">BLUE TEAM</span>
+          <p class="ops__desc">Defending digital environments through monitoring, threat detection, incident response, and security improvement.</p>
+          <ul class="ops__list">
+            <li>SOC Monitoring</li>
+            <li>Incident Response</li>
+            <li>Threat Analysis</li>
+            <li>Security Operations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ops__handle" id="ops-handle" role="slider" aria-label="Drag to compare Red Team and Blue Team" tabindex="0" aria-valuemin="10" aria-valuemax="90" aria-valuenow="50">
+        <span class="ops__handle-grip">⟷</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">04 / PROJECTS</p>
+      <h2 class="section__title">Active Research &amp; Builds</h2>
+
+      <div class="projects__grid" id="reveal-projects">
+        <article class="glass-card project-card">
+          <div class="project-card__head">
+            <span class="status status--live">LIVE</span>
+          </div>
+          <h3>Hybrid Linux Security &amp; System Health Monitoring System</h3>
+          <p>An automated security monitoring solution that detects suspicious activities, tracks system health, and provides real-time alerts.</p>
+          <div class="project-card__stack">
+            <span>Python</span><span>Linux</span><span>Bash</span><span>Firewall</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-card__head">
+            <span class="status status--dev">IN DEV</span>
+          </div>
+          <h3>AI-Based Phishing Detection System</h3>
+          <p>A cybersecurity application designed to detect and identify potential phishing URLs or messages using machine learning and natural language processing techniques. It helps users identify suspicious content and reduce the risk of phishing attacks.</p>
+          <div class="project-card__stack">
+            <span>Python</span><span>APIs</span><span>Detection</span><span>Automation</span>
+          </div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-card__head">
+            <span class="status status--dev">IN DEV</span>
+          </div>
+          <h3>Class Portal – Flask Web Application</h3>
+          <p>A web-based platform for managing students, projects, tasks, and academic activities. It provides separate access for students, staff, and administrators with database integration and authentication.</p>
+          <div class="project-card__stack">
+            <span>Python Flask</span><span>APIs</span><span>DB</span><span>Automation</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-card__head">
+            <span class="status status--research">RESEARCH</span>
+          </div>
+          <h3>AI-Assisted Anomaly Detection</h3>
+          <p>Exploring lightweight machine learning models for detecting abnormal network behavior in low-resource environments.</p>
+          <div class="project-card__stack">
+            <span>Python</span><span>ML</span><span>Networking</span><span>AI Security</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. TEAM ===== -->
+  <section class="team" id="team">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">05 / TEAM</p>
+      <h2 class="section__title">The Operators</h2>
+
+      <div class="team__grid" id="reveal-team">
+        <article class="glass-card team-card">
+          <div class="team-card__avatar">SA</div>
+          <h3>Yuvan Mathesh M </h3>
+          <p class="team-card__role">Application & Web Security</p>
+          <span class="team-card__domain">Threat Detection & Incident Response</span>
+        </article>
+        <article class="glass-card team-card">
+          <div class="team-card__avatar">NE</div>
+          <h3>Guruprasath A</h3>
+          <p class="team-card__role">AI Security Developer</p>
+          <span class="team-card__domain">AI Security</span>
+        </article>
+        <article class="glass-card team-card">
+          <div class="team-card__avatar">CE</div>
+          <h3>Santhosh C</h3>
+          <p class="team-card__role">SOC Analyst</p>
+          <span class="team-card__domain">Blue Team</span>
+        </article>
+        <article class="glass-card team-card">
+          <div class="team-card__avatar">AI</div>
+          <h3>Pavatharini S</h3>
+          <p class="team-card__role">SOC Analyst</p>
+          <span class="team-card__domain">Blue Team</span>
+        </article>
+        <article class="glass-card team-card">
+          <div class="team-card__avatar">EH</div>
+          <h3>Prasanna Kumar</h3>
+          <p class="team-card__role">Ethical Hacker</p>
+          <span class="team-card__domain">Ethical Hacking Research</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. SKILLS / STACK ===== -->
+  <section class="stack">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">06 / STACK</p>
+      <h2 class="section__title">Tools of the Trade</h2>
+
+      <div class="stack__badges" id="reveal-stack">
+        <span class="badge">Linux</span>
+        <span class="badge">Python</span>
+        <span class="badge">Networking</span>
+        <span class="badge">Cloud Security</span>
+        <span class="badge">AI Security</span>
+        <span class="badge">Digital Forensics</span>
+        <span class="badge">Ethical Hacking</span>
+        <span class="badge">Threat Intelligence</span>
+        <span class="badge">Firewall</span>
+        <span class="badge">Security Tools</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--center">07 / CONTACT</p>
+      <h2 class="section__title">Let's Build A Secure Digital Future Together</h2>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__item">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">ethasphere.team@gmail.com</span>
+          </div>
+          <div class="contact__item">
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">linkedin.com/company/ethasphere</span>
+          </div>
+          <div class="contact__item">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">github.com/ethasphere</span>
+          </div>
+          <div class="contact__item">
+            <span class="contact__label">Location</span>
+            <span class="contact__value">Remote-first / Global</span>
+          </div>
+        </div>
+
+        <form class="glass-card contact__form" id="contact-form">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--block">Submit</button>
+          <p class="contact__note" id="contact-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo-bracket">[</span>ETHASPHERE<span class="nav__logo-bracket">]</span>
+      <p>Securing The Digital World Through Innovation &amp; Ethics</p>
+    </div>
+    <div class="footer__social">
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="GitHub">gh</a>
+      <a href="#" aria-label="Email">@</a>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 ETHASPHERE. All rights reserved.</p>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
