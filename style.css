@@ -205,6 +205,9 @@ section { position: relative; padding: 110px 0; z-index: 1; }
 }
 
 .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--f-mono);
   font-weight: 700;
   font-size: 17px;
@@ -247,6 +250,23 @@ section { position: relative; padding: 110px 0; z-index: 1; }
 .nav__toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav__toggle.is-open span:nth-child(2) { opacity: 0; }
 .nav__toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Logo image styles */
+#site-logo {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+.nav__logo-text { display: inline-block; }
+
+/* Footer logo */
+.footer__brand { font-family: var(--f-mono); font-weight: 700; display: flex; align-items: center; gap: 12px; }
+.footer__logo { width: 36px; height: 36px; display: block; }
+.footer__brand-name { font-weight: 700; }
+
+@media (max-width: 720px) {
+  .nav__logo-text { display: none; }
+}
 
 /* ==========================================================================
    Hero
